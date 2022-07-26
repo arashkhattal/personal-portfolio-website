@@ -368,6 +368,8 @@ header{
     transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
     border-radius: 7px;
+    max-width: 200px;
+    align-items: center;
 }
 .portfolio__item:focus{
     position: relative;
@@ -379,6 +381,11 @@ header{
 .portfolio__item:focus .portfolio__img{
     transform: scale(1.2);
     opacity: .75;
+}
+@media (min-width: 800px) {
+    .portfolio__img{
+        max-width: 400px;
+    }
 }
 
 /* footer  */
